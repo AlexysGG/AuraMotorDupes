@@ -1,0 +1,8 @@
+{
+  "name": "Aura - Perfume AI & Dupe Finder",
+  "description": "Plataforma minimalista e intuitiva de recomendación de perfumes y alternativas accesibles impulsada por IA con filtro de presupuesto.",
+  "requestFramePermissions": [],
+  "majorCapabilities": [
+    "MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"
+  ]
+}

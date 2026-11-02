@@ -1,0 +1,117 @@
+{
+  "name": "Aura - Perfume AI & Dupe Finder",
+  "short_name": "Aura",
+  "description": "Sumiller inteligente de fragancias y recomendador de alternativas económicas con IA.",
+  "id": "/?source=pwa",
+  "start_url": "/?source=pwa",
+  "scope": "/",
+  "display": "standalone",
+  "display_override": [
+    "standalone",
+    "window-controls-overlay",
+    "minimal-ui"
+  ],
+  "orientation": "portrait-primary",
+  "theme_color": "#18181b",
+  "background_color": "#FAFAFA",
+  "categories": [
+    "lifestyle",
+    "shopping",
+    "utilities"
+  ],
+  "icons": [
+    {
+      "src": "/icons/icon-192x192.png",
+      "sizes": "192x192",
+      "type": "image/png",
+      "purpose": "any"
+    },
+    {
+      "src": "/icons/icon-512x512.png",
+      "sizes": "512x512",
+      "type": "image/png",
+      "purpose": "any"
+    },
+    {
+      "src": "/icons/icon-maskable-192x192.png",
+      "sizes": "192x192",
+      "type": "image/png",
+      "purpose": "maskable"
+    },
+    {
+      "src": "/icons/icon-maskable-512x512.png",
+      "sizes": "512x512",
+      "type": "image/png",
+      "purpose": "maskable"
+    },
+    {
+      "src": "/icons/icon.svg",
+      "sizes": "any",
+      "type": "image/svg+xml",
+      "purpose": "any maskable"
+    }
+  ],
+  "shortcuts": [
+    {
+      "name": "Buscar Dupes Económicos",
+      "short_name": "Buscar",
+      "description": "Encuentra alternativas accesibles a cualquier fragancia",
+      "url": "/?action=search",
+      "icons": [
+        {
+          "src": "/icons/icon-192x192.png",
+          "sizes": "192x192",
+          "type": "image/png"
+        }
+      ]
+    },
+    {
+      "name": "Mis Fragancias Guardadas",
+      "short_name": "Favoritos",
+      "description": "Consulta tu tocador personal y perfumes guardados",
+      "url": "/?action=wishlist",
+      "icons": [
+        {
+          "src": "/icons/icon-192x192.png",
+          "sizes": "192x192",
+          "type": "image/png"
+        }
+      ]
+    },
+    {
+      "name": "Clones de Club de Nuit",
+      "short_name": "Club de Nuit",
+      "description": "Alternativas directas más baratas con ADN Aventus",
+      "url": "/?action=club_de_nuit",
+      "icons": [
+        {
+          "src": "/icons/icon-192x192.png",
+          "sizes": "192x192",
+          "type": "image/png"
+        }
+      ]
+    },
+    {
+      "name": "Sumiller Olfativo AI",
+      "short_name": "Sumiller",
+      "description": "Asesoría olfativa personalizada por notas",
+      "url": "/?action=sommelier",
+      "icons": [
+        {
+          "src": "/icons/icon-192x192.png",
+          "sizes": "192x192",
+          "type": "image/png"
+        }
+      ]
+    }
+  ],
+  "share_target": {
+    "action": "/",
+    "method": "GET",
+    "params": {
+      "title": "title",
+      "text": "text",
+      "url": "url"
+    }
+  }
+}

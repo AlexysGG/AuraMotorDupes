@@ -1,0 +1,50 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" width="100%" height="100%">
+  <defs>
+    <linearGradient id="bgGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#18181b"/>
+      <stop offset="100%" stop-color="#09090b"/>
+    </linearGradient>
+    <linearGradient id="goldGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#fef08a"/>
+      <stop offset="50%" stop-color="#f59e0b"/>
+      <stop offset="100%" stop-color="#d97706"/>
+    </linearGradient>
+    <radialGradient id="auraGlow" cx="50%" cy="50%" r="50%">
+      <stop offset="0%" stop-color="#f59e0b" stop-opacity="0.35"/>
+      <stop offset="100%" stop-color="#18181b" stop-opacity="0"/>
+    </radialGradient>
+  </defs>
+
+  <!-- Background -->
+  <rect width="512" height="512" rx="112" fill="url(#bgGrad)"/>
+  
+  <!-- Subtle Aura Ambient Glow -->
+  <circle cx="256" cy="270" r="180" fill="url(#auraGlow)"/>
+
+  <!-- Geometric Modern Luxury Bottle Design -->
+  <!-- Atomizer / Cap -->
+  <rect x="220" y="110" width="72" height="48" rx="8" fill="url(#goldGrad)" stroke="#fef08a" stroke-width="2"/>
+  <rect x="238" y="86" width="36" height="24" rx="4" fill="#fafafa"/>
+  <rect x="246" y="158" width="20" height="22" fill="url(#goldGrad)"/>
+
+  <!-- Bottle Shoulder & Body -->
+  <path d="M 176 180 L 336 180 C 352 180 366 194 366 210 L 366 380 C 366 404 346 424 322 424 L 190 424 C 166 424 146 404 146 380 L 146 210 C 146 194 160 180 176 180 Z" 
+        fill="#1f1f23" stroke="url(#goldGrad)" stroke-width="6"/>
+
+  <!-- Inner Liquid Essence -->
+  <path d="M 166 260 Q 256 240 346 260 L 346 380 C 346 396 332 408 316 408 L 196 408 C 180 408 166 396 166 380 Z" 
+        fill="url(#goldGrad)" opacity="0.85"/>
+
+  <!-- Bottle Facet Reflections -->
+  <path d="M 170 200 L 170 390" stroke="#ffffff" stroke-width="3" stroke-linecap="round" opacity="0.3"/>
+  <path d="M 182 210 L 182 370" stroke="#ffffff" stroke-width="1.5" stroke-linecap="round" opacity="0.2"/>
+
+  <!-- Center Luxury Monogram "A" -->
+  <text x="256" y="345" font-family="'Playfair Display', Georgia, serif" font-size="64" font-weight="600" fill="#18181b" text-anchor="middle" letter-spacing="2">A</text>
+  
+  <!-- Sparkles / Aura Stars -->
+  <path d="M 370 120 Q 370 140 390 140 Q 370 140 370 160 Q 370 140 350 140 Q 370 140 370 120 Z" fill="#fef08a"/>
+  <path d="M 140 140 Q 140 152 152 152 Q 140 152 140 164 Q 140 152 128 152 Q 140 152 140 140 Z" fill="url(#goldGrad)"/>
+  <circle cx="396" cy="180" r="4" fill="#fef08a"/>
+  <circle cx="120" cy="280" r="3" fill="#f59e0b"/>
+</svg>
