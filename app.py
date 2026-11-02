@@ -203,7 +203,7 @@ def call_gemini_api(query: str, min_price: float, max_price: float) -> dict:
         return get_curated_response(query, min_price, max_price)
 
     # List of official supported models in preference order
-    candidate_models = ['gemini-3.5-flash', 'gemini-2.0-flash', 'gemini-1.5-flash', 'gemini-1.5-pro']
+    candidate_models = ['gemini-2.0-flash', 'gemini-1.5-flash', 'gemini-1.5-pro']
 
     # First attempt: official google-genai library if present
     try:

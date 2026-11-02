@@ -122,7 +122,7 @@ self.addEventListener('activate', (event) => {
 });
 
 // Helper: Network with timeout
-function fetchWithTimeout(request, timeoutMs = 6000) {
+function fetchWithTimeout(request, timeoutMs = 25000) {
   return new Promise((resolve, reject) => {
     const timer = setTimeout(() => {
       reject(new Error('Network request timed out'));
@@ -153,8 +153,8 @@ self.addEventListener('fetch', (event) => {
     event.respondWith(
       (async () => {
         try {
-          // Attempt network with timeout
-          const networkResponse = await fetchWithTimeout(request.clone(), 6000);
+          // Attempt network with 25s timeout for AI generation
+          const networkResponse = await fetchWithTimeout(request.clone(), 25000);
           if (networkResponse && networkResponse.ok) {
             // Cache successful GET or POST clone for offline reuse
             if (request.method === 'GET' || request.method === 'POST') {
